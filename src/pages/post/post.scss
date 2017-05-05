@@ -1,0 +1,17 @@
+page-about {
+  ion-content {
+    ion-list {
+      button {
+          overflow-wrap: break-word;
+          overflow: visible !important;
+        font-size: xx-small;
+        text-wrap: normal;
+        }
+        img {
+          position: inherit;
+          margin-right: 5px !important;
+          margin-bottom: -20px !important;
+        }
+      }
+    }
+  }

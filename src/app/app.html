@@ -1,0 +1,20 @@
+<ion-menu [content]="content">
+
+  <ion-header>
+    <ion-toolbar color="primary">
+      <ion-title>Voice of Women<img width="25" height="20" margin-top="4px" margin-left="5px" src="../assets/icon/megaphone.png"></ion-title>
+    </ion-toolbar>
+
+  </ion-header>
+
+  <ion-content>
+    <ion-list>
+      <button ion-item *ngFor="let p of pages" (click)="openPage(p)">
+        {{p.title}}
+      </button>
+    </ion-list>
+  </ion-content>
+
+</ion-menu>
+
+<ion-nav [root]="rootPage" #content swipeBackEnabled="true"></ion-nav>

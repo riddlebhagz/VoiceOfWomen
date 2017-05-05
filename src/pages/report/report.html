@@ -1,0 +1,44 @@
+<ion-header>
+  <ion-navbar color="primary1">
+    <ion-title align-items-center>
+      Report Issue
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+<ion-list>
+  <ion-item>
+    <ion-label>What do you want to report?</ion-label>
+    <ion-select [(ngModel)]="issues">
+      <ion-option val="harass">Harassment Issues</ion-option>
+      <ion-option val="security">Security</ion-option>
+      <ion-option val="opportunity">Opportunity</ion-option>
+    </ion-select>
+  </ion-item>
+
+  <ion-item>
+    <ion-label fixed>Location</ion-label>
+    <ion-input type="text" value=""></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label fixed text-wrap>Project Details</ion-label>
+    <ion-input type="text"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label fixed>Issue With</ion-label>
+    <ion-input type="text" value=""></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label fixed>Description</ion-label>
+    <ion-textarea type="text" height="50px"></ion-textarea>
+  </ion-item>
+</ion-list>
+<br>
+  <button ion-button color="secondary">Reset</button>
+  <button ion-button>Submit</button>
+
+</ion-content>

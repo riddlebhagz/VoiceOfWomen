@@ -1,0 +1,40 @@
+page-home {
+  ion-title{
+    font-size: medium;
+  }
+  ion-card{
+    ion-navbar{
+      height: 30px !important;
+    }
+  }
+  ion-card-content{
+    padding: 5px!important;
+
+    ion-row
+    {
+      padding: 0px!important;
+      ion-col{
+        img{
+          margin-left: 12px;
+          height: 75px;
+          width: 70px;
+        }
+      }
+    }
+  }
+
+
+  ion-grid{
+
+    font-family: -apple-system, "Helvetica Neue", "Roboto", sans-serif;
+    padding: 0px!important;
+    font-size: x-small;
+    //border: groove;
+
+    ion-row{
+      padding: 2px;
+      border:groove #ffffff;
+    }
+  }
+
+}

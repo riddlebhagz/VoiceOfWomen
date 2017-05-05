@@ -1,0 +1,38 @@
+<ion-content padding>
+  <h3>Welcome Bhagya,</h3><div></div>
+  <div margin-top="50px!important">
+  <p>
+<ion-card>
+   <ion-navbar color="primary"><ion-title>Upcoming Events</ion-title></ion-navbar>
+  <ion-card-content>
+    <ion-grid style="padding: 0px">
+      <ion-row *ngFor="let e of events">
+        <ion-col col-7><i class="fa fa-calendar" aria-hidden="true"></i> {{e.title}}</ion-col>
+        <ion-col col-5>{{e.date}}, {{e.year}}  {{e.time}}</ion-col>
+        <!--<ion-col col-3>{{e.time}}</ion-col>-->
+      </ion-row>
+    </ion-grid>
+  </ion-card-content>
+    </ion-card>
+  </p>
+  </div>
+<p></p>  <div>
+  <p margin-top="70px">
+    <ion-card>
+      <ion-navbar color="primary"><ion-title>Quick Links</ion-title></ion-navbar>
+      <ion-card-content>
+        <ion-row>
+          <ion-col col-4 [navPush]="itemDetailsPage"><img src="../../assets/icon/policy.png"></ion-col>
+          <ion-col col-4><img src="../../assets/icon/leader.png"></ion-col>
+          <ion-col col-4><img src="../../assets/icon/safety.png"></ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col col-4 [navPush]="networkPage"><img src="../../assets/icon/network.png"></ion-col>
+          <ion-col col-4><img src="../../assets/icon/hr.png"></ion-col>
+          <ion-col col-4><img src="../../assets/icon/benefit.png"></ion-col>
+        </ion-row>
+      </ion-card-content>
+    </ion-card>
+  </p>
+  </div>
+</ion-content>
